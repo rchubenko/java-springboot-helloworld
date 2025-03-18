@@ -14,10 +14,10 @@ public class HelloWorldApplication {
 }
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/")
 class HelloWorldController {
-    @GetMapping("/hello")
+    @GetMapping("/")
     public String sayHello() {
-        return "Hello, World!";
+        return "Hello, World! Application version 1.0";
     }
 }
